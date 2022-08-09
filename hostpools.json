@@ -73,6 +73,10 @@
                       {
                         "category": "HostRegistration",
                         "enabled": "[parameters('logsEnabled')]"
+                      },
+                      {
+                        "category": "AgentHealthStatus",
+                        "enabled": "[parameters('logsEnabled')]"
                       }
                     ]
                   }
