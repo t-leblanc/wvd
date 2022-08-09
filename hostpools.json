@@ -78,11 +78,11 @@
                       "enabled": "[parameters('logsEnabled')]"
                     },
                     {
-                      "category": "Network Data Logs",
+                      "category": "NetworkData",
                       "enabled": "[parameters('logsEnabled')]"
                     },
                     {
-                      "category": "Session Host Management Activity Logs",
+                      "category": "SessionHostManagement",
                       "enabled": "[parameters('logsEnabled')]"
                     }
                   ]
