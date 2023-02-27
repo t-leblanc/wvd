@@ -53,38 +53,10 @@
                 "properties": {
                   "workspaceId": "[parameters('logAnalytics')]",
                   "logs": [
-                    {
-                      "category": "Checkpoint",
-                      "enabled": "[parameters('logsEnabled')]"
-                    },
-                    {
-                      "category": "Error",
-                      "enabled": "[parameters('logsEnabled')]"
-                    },
-                    {
-                      "category": "Management",
-                      "enabled": "[parameters('logsEnabled')]"
-                    },
-                    {
-                      "category": "Connection",
-                      "enabled": "[parameters('logsEnabled')]"
-                    },
-                    {
-                      "category": "HostRegistration",
-                      "enabled": "[parameters('logsEnabled')]"
-                    },
-                    {
-                      "category": "AgentHealthStatus",
-                      "enabled": "[parameters('logsEnabled')]"
-                    },
-                    {
-                      "category": "NetworkData",
-                      "enabled": "[parameters('logsEnabled')]"
-                    },
-                    {
-                      "category": "SessionHostManagement",
-                      "enabled": "[parameters('logsEnabled')]"
-                    }
+                      {
+                          "category": "AllLogs",
+                          "enabled": true
+                      }
                   ]
                 }
               }
