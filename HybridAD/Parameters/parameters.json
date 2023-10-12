@@ -1,0 +1,73 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "assetLocation": {
+        "value": "https://raw.githubusercontent.com/t-leblanc/wvd/main/HybridAD/"
+      },
+      "adminUsername": {
+        "value": "ADAdmin"
+      },
+      "deploymentNumber": {
+        "value": "1"
+      },
+      "adminPassword": {
+        "value": ""
+      },
+      "adDomainName": {
+        "value": "CLOUDICTION"
+      },
+      "usersArray": {
+        "value": [
+          {
+            "FName": "Bob",
+            "LName": "Jones",
+            "SAM": "bjones"
+          },
+          {
+            "FName": "Bill",
+            "LName": "Smith",
+            "SAM": "bsmith"
+          },
+          {
+            "FName": "Mary",
+            "LName": "Phillips",
+            "SAM": "mphillips"
+          },
+          {
+            "FName": "Sue",
+            "LName": "Jackson",
+            "SAM": "sjackson"
+          },
+          {
+            "FName": "Jack",
+            "LName": "Petersen",
+            "SAM": "jpetersen"
+          },
+          {
+            "FName": "Julia",
+            "LName": "Williams",
+            "SAM": "jwilliams"
+          }
+        ]
+      },
+      "customupnsuffix": {
+        "value": "cloudiction.net"
+      },
+      "defaultUserPassword": {
+        "value": "Letterkunde123!"
+      },
+      "vmSize": {
+        "value": "Standard_B2ms"
+      },
+      "virtualNetworkAddressRange": {
+        "value": "10.0.0.0/16"
+      },
+      "adSubnetAddressRange": {
+        "value": "10.0.1.0/24"
+      },
+      "adIP": {
+        "value": "10.0.1.4"
+      }
+    }
+  }
