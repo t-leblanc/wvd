@@ -1,43 +1,73 @@
 {
-    "effect": {
-      "type": "String",
-      "metadata": {
-        "displayName": "Effect",
-        "description": "Enable or disable the execution of the policy"
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+      "assetLocation": {
+        "value": "https://raw.githubusercontent.com/t-leblanc/wvd/main/HybridAD/"
       },
-      "allowedValues": [
-        "DeployIfNotExists",
-        "Disabled"
-      ],
-      "defaultValue": "DeployIfNotExists"
-    },
-    "profileName": {
-      "type": "String",
-      "metadata": {
-        "displayName": "Profile name",
-        "description": "The diagnostic settings profile name"
+      "adminUsername": {
+        "value": "ADAdmin"
       },
-      "defaultValue": "setbypolicy_logAnalytics"
-    },
-    "logAnalytics": {
-      "type": "String",
-      "metadata": {
-        "displayName": "Log Analytics workspace",
-        "description": "Select Log Analytics workspace from dropdown list. If this workspace is outside of the scope of the assignment you must manually grant Log Analytics Contributor permissions (or similar) to the policy assignment s principal ID.",
-        "strongType": "omsWorkspace",
-        "assignPermissions": true
+      "deploymentNumber": {
+        "value": "1"
+      },
+      "adminPassword": {
+        "value": "Letterkunde123!"
+      },
+      "adDomainName": {
+        "value": "CLOUDICTION"
+      },
+      "usersArray": {
+        "value": [
+          {
+            "FName": "Bob",
+            "LName": "Jones",
+            "SAM": "bjones"
+          },
+          {
+            "FName": "Bill",
+            "LName": "Smith",
+            "SAM": "bsmith"
+          },
+          {
+            "FName": "Mary",
+            "LName": "Phillips",
+            "SAM": "mphillips"
+          },
+          {
+            "FName": "Sue",
+            "LName": "Jackson",
+            "SAM": "sjackson"
+          },
+          {
+            "FName": "Jack",
+            "LName": "Petersen",
+            "SAM": "jpetersen"
+          },
+          {
+            "FName": "Julia",
+            "LName": "Williams",
+            "SAM": "jwilliams"
+          }
+        ]
+      },
+      "customupnsuffix": {
+        "value": "cloudiction.net"
+      },
+      "defaultUserPassword": {
+        "value": "Letterkunde123!"
+      },
+      "vmSize": {
+        "value": "Standard_B2ms"
+      },
+      "virtualNetworkAddressRange": {
+        "value": "10.0.0.0/16"
+      },
+      "adSubnetAddressRange": {
+        "value": "10.0.1.0/24"
+      },
+      "adIP": {
+        "value": "10.0.1.4"
       }
-    },
-    "logsEnabled": {
-      "type": "String",
-      "metadata": {
-        "displayName": "Enable logs",
-        "description": "Whether to enable logs stream to the Log Analytics workspace - True or False"
-      },
-      "allowedValues": [
-        "True",
-        "False"
-      ],
-      "defaultValue": "True"
     }
   }
